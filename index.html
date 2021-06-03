@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./styles.css' />
+    <script src='./jsLogic.js'></script>
+    <title>Sudoku</title>
+</head>
+
+<body>
+    <header>
+        <h1 class='game__heading'>Sudoku Game</h1>
+    </header>
+    <section class='game__setup'>
+        <div class='game__options'>
+            <div class='game__diff'>
+                <h3 class='game__subHeading'>Choose difficulty</h3>
+                <label>
+                <input class='game__diff' type='radio' id='game__diffEasy' value='easy' name='game__diff' checked>
+                Easy
+            </label>
+                <label>
+                <input class='game__diff' type='radio' id='game__diffMedium' value='medium' name='game__diff'>
+                Medium
+            </label>
+                <label>
+                <input class='game__diff' type='radio' id='game__diffHard' value='hard' name='game__diff'>
+                Hard
+            </label>
+            </div>
+            <div class='game__time'>
+                <h3 class='game__subHeading'> Choose Time</h3>
+                <label>
+                    <input class='game__time' type='radio' id='game__timeFive' value='five' name='game__time' checked>
+                    5 min
+                </label>
+                <label>
+                    <input class='game__time' type='radio' id='game__timeTen' value='ten' name='game__time' >
+                    10 min
+                </label>
+                <label>
+                    <input class='game__time' type='radio' id='game__timeFifteen' value='fifteen' name='game__time'>
+                    15 min
+                </label>
+            </div>
+        </div>
+        <button class='game__createBtn'>Create New Game</button>
+    </section>
+    <section class='game__main'>
+        <div class='game__stats'>
+            <p class='game__timer'></p>
+            <p class='game__lives'></p>
+        </div>
+        <div class='game__game'>
+            <div class='game__number hidden'>
+                <p id='game__number--one'>1</p>
+                <p id='game__number--two'>2</p>
+                <p id='game__number--three'>3</p>
+                <p id='game__number--four'>4</p>
+                <p id='game__number--five'>5</p>
+                <p id='game__number--six'>6</p>
+                <p id='game__number--seven'>7</p>
+                <p id='game__number--eight'>8</p>
+                <p id='game__number--nine'>9</p>
+            </div>
+            <div class='game__board'></div>
+        </div>
+    </section>
+    <!-- <footer>
+        <p>&copy; shafinaz2006@gmail.com</p>
+    </footer> -->
+</body>
+
+</html>
